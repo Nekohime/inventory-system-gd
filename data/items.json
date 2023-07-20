@@ -1,6 +1,5 @@
 {
 	"stone_of_returning": {
-		"id": "stone_of_returning",
 		"name": "Stone of Returning",
 		"type": "teleport",
 		"value": false,
@@ -13,7 +12,6 @@
 		]
 	},
 	"useless_dust": {
-	  "id": "useless_dust",
 	  "name": "Useless Dust",
 	  "type": "currency",
 	  "value": false,
@@ -23,7 +21,6 @@
 	  "examine": "Atchoo!"
 	},
 	"wooden_stick": {
-	  "id": "wooden_stick",
 	  "name": "A stick",
 	  "type": "melee_weapon",
 	  "value": 1,
@@ -33,7 +30,6 @@
 	  "examine": "What's brown and sticky?"
 	},
 	"strawberry": {
-		"id": "strawberry",
 		"name": "Strawberry",
 		"type": "food",
 		"value": 5,

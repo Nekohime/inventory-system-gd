@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://chjiifrnq78yj" path="res://gfx/itemset01.tres" id="1_xopgr"]
 [ext_resource type="Texture2D" uid="uid://bytmv8s7ooi28" path="res://gfx/itemset01.png" id="2_0fpcd"]
-[ext_resource type="Script" path="res://scripts/InventoryList.gd" id="3_lt8ld"]
+[ext_resource type="Script" path="res://scripts/InventoryList.gd" id="4_3mo2t"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_b6v6c"]
 atlas = ExtResource("2_0fpcd")
@@ -27,7 +27,7 @@ item_0/text = "Old Gold Coin"
 item_0/icon = ExtResource("1_xopgr")
 item_1/text = "Health Potion x99"
 item_1/icon = SubResource("AtlasTexture_b6v6c")
-script = ExtResource("3_lt8ld")
+script = ExtResource("4_3mo2t")
 
 [node name="ItemInformationBox" type="ColorRect" parent="."]
 layout_mode = 0
