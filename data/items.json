@@ -1,0 +1,46 @@
+{
+	"stone_of_returning": {
+		"id": "stone_of_returning",
+		"name": "Stone of Returning",
+		"type": "teleport",
+		"value": false,
+		"quality": "common",
+		"destroy": false,
+		"stackable": false,
+		"examine": "Home Sweet Home.",
+		"actions": [
+		  "teleport:inn"
+		]
+	},
+	"useless_dust": {
+	  "id": "useless_dust",
+	  "name": "Useless Dust",
+	  "type": "currency",
+	  "value": false,
+	  "quality": "epic",
+	  "destroy": "drop",
+	  "stackable": true,
+	  "examine": "Atchoo!"
+	},
+	"wooden_stick": {
+	  "id": "wooden_stick",
+	  "name": "A stick",
+	  "type": "melee_weapon",
+	  "value": 1,
+	  "quality": "common",
+	  "destroy": "drop",
+	  "stackable": false,
+	  "examine": "What's brown and sticky?"
+	},
+	"strawberry": {
+		"id": "strawberry",
+		"name": "Strawberry",
+		"type": "food",
+		"value": 5,
+		"quality": "common",
+		"destroy": "drop",
+		"stackable": false,
+		"examine": "Yum!",
+		"health": 10
+	}
+}
