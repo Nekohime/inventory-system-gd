@@ -102,3 +102,20 @@ func _on_button_2_pressed() -> void:
 	pinv.take_item_at_index(0, 2)
 	do_inventory_display()
 	pass
+
+
+func _on_button_3_pressed() -> void:
+	var single_selected_item = get_selected_items()[0];
+	var selected_item = pinv.get_item_at_index(single_selected_item)
+	print(pinv.get_item_from_db(selected_item.id))
+
+
+func _on_item_instance_button_pressed() -> void:
+	var single_selected_item = get_selected_items()[0];
+	var selected_item = pinv.get_item_at_index(single_selected_item)
+	print(selected_item)
+	pass
+
+func _on_inventory_data_button_pressed() -> void:
+	print(pinv.get_inventory())
+	pass # Replace with function body.

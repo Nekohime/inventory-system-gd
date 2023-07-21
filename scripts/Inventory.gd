@@ -175,9 +175,13 @@ func take_item_at_index(idx: int, amount: int = 1) -> void:
 func set_itemdb() -> void:
 	self.itemdb = self.get_json("res://data/items.json")
 
-#Returns the Item Database (Unused)
+# Returns the Item Database (Unused)
 func get_item_db() -> Dictionary:
 	return self.itemdb
+
+# Returns the Item Data from Database
+func get_item_from_db(id) -> Dictionary:
+	return self.itemdb[id]
 
 ## Get Inventory
 

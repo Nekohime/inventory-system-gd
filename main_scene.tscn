@@ -104,23 +104,53 @@ text = "Equipment"
 layout_mode = 2
 text = "Stats"
 
-[node name="Button" type="Button" parent="."]
+[node name="AddButton" type="Button" parent="."]
 layout_mode = 0
 offset_left = 627.0
-offset_top = 368.0
+offset_top = 328.0
 offset_right = 695.0
-offset_bottom = 434.0
+offset_bottom = 394.0
 text = "++"
 metadata/_edit_group_ = true
 
-[node name="Button2" type="Button" parent="."]
+[node name="RemoveButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 755.0
-offset_top = 403.0
-offset_right = 823.0
-offset_bottom = 469.0
+offset_left = 627.0
+offset_top = 406.0
+offset_right = 695.0
+offset_bottom = 472.0
 text = "--"
 metadata/_edit_group_ = true
 
-[connection signal="pressed" from="Button" to="InventoryList" method="_on_button_pressed"]
-[connection signal="pressed" from="Button2" to="InventoryList" method="_on_button_2_pressed"]
+[node name="ItemDBButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 716.0
+offset_top = 328.0
+offset_right = 817.0
+offset_bottom = 394.0
+text = "ItemDB Info"
+metadata/_edit_group_ = true
+
+[node name="ItemInstanceButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 716.0
+offset_top = 406.0
+offset_right = 861.0
+offset_bottom = 472.0
+text = "Item InstanceInfo"
+metadata/_edit_group_ = true
+
+[node name="InventoryDataButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 632.0
+offset_top = 486.0
+offset_right = 777.0
+offset_bottom = 552.0
+text = "Get Inventory Data"
+metadata/_edit_group_ = true
+
+[connection signal="pressed" from="AddButton" to="InventoryList" method="_on_button_pressed"]
+[connection signal="pressed" from="RemoveButton" to="InventoryList" method="_on_button_2_pressed"]
+[connection signal="pressed" from="ItemDBButton" to="InventoryList" method="_on_button_3_pressed"]
+[connection signal="pressed" from="ItemInstanceButton" to="InventoryList" method="_on_item_instance_button_pressed"]
+[connection signal="pressed" from="InventoryDataButton" to="InventoryList" method="_on_inventory_data_button_pressed"]
