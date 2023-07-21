@@ -92,6 +92,13 @@ func do_inventory_display():
 		select(0)
 
 func _on_button_pressed() -> void:
-	pinv.give_item("strawberry", 1)
-	pinv.give_item("useless_dust", 1)
+	#pinv.give_item("strawberry", 1)
+	#pinv.give_item("useless_dust", 1)
+	pinv.give_item("wooden_stick", 1, { "test": "yep"})
 	do_inventory_display()
+
+
+func _on_button_2_pressed() -> void:
+	pinv.take_item_at_index(0, 2)
+	do_inventory_display()
+	pass

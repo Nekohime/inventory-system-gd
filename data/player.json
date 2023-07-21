@@ -1,14 +1,9 @@
 {
-	"items": [
-		{
-			"id": "wooden_stick"
-		},
-		{
-			"amount": 4,
-			"id": "useless_dust"
-		},
-		{
-			"id": "strawberry"
-		}
+	"items":[
+		{ "data":{"bonus_dmg":1337},"id":"wooden_stick" },
+		{ "id":"wooden_stick" },
+		{"amount":5,"id":"useless_dust"},
+		{"data":{"bonus_dmg":1337},"id":"strawberry"},
+		{"id":"strawberry"}
 	]
 }
